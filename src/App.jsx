@@ -8,7 +8,11 @@ function App() {
   const { theme, setTheme } = useContext(MyContext);
   return (
     <div className={`${theme} w-screen h-screen`}>
-      <DarkLightMode />
+      <div className="  flex justify-center  items-center">
+        <div className=" border shadow-md rounded-lg">
+          <DarkLightMode />
+        </div>
+      </div>
     </div>
   );
 }

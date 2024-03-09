@@ -8,9 +8,6 @@ const DarkLightMode = () => {
   console.log(theme);
   return (
     <div>
-      {/* <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-        click me
-      </button> */}
       <label>
         <Toggle
           defaultChecked={false}
