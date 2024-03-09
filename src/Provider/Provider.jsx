@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 export const MyContext = createContext();
 
 const Provider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("Dark");
   const [selectedLanguage, setSelectedLanguage] = useState("Hindi");
   return (
     <MyContext.Provider
