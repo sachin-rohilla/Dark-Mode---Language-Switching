@@ -8,7 +8,11 @@ const DarkLightMode = () => {
   console.log(theme);
   return (
     <div>
-      <label>
+      <label className="flex flex-col items-center gap-4">
+        <span className="font-semibold">
+          {theme === "light" ? "Dark Mode" : "Light Mode"}
+        </span>
+
         <Toggle
           defaultChecked={false}
           icons={false}

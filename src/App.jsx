@@ -12,11 +12,11 @@ function App() {
       className={`${theme} w-screen h-screen flex justify-center items-center`}
     >
       <div className="w-1/2 border shadow-md rounded-lg p-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-4 items-center justify-between">
           <DarkLightMode />
           <SelectLanguage />
         </div>
-        <p>
+        <p className="mt-4">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
           placeat eveniet qui expedita quod neque culpa quo, facilis provident
           quisquam vitae dolore reiciendis quae dolorem amet quasi cupiditate
