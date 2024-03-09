@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { MyContext } from "../Provider/Provider";
+import Toggle from "react-toggle";
 
 const DarkLightMode = () => {
   const { theme, setTheme } = useContext(MyContext);
@@ -7,9 +8,18 @@ const DarkLightMode = () => {
   console.log(theme);
   return (
     <div>
-      <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+      {/* <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
         click me
-      </button>
+      </button> */}
+      <label>
+        <Toggle
+          defaultChecked={false}
+          icons={false}
+          onChange={() => {
+            setTheme(theme === "light" ? "dark" : "light");
+          }}
+        />
+      </label>
     </div>
   );
 };
